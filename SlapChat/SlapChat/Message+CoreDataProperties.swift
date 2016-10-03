@@ -2,7 +2,7 @@
 //  Message+CoreDataProperties.swift
 //  SlapChat
 //
-//  Created by Flatiron School on 7/18/16.
+//  Created by Bettina on 10/3/16.
 //  Copyright © 2016 Flatiron School. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -16,5 +16,8 @@ extension Message {
 
     @NSManaged var content: String?
     @NSManaged var createdAt: NSDate?
+    @NSManaged var recipient: Recipient? //receiver is here, always check that relationship shows up
+    
+
 
 }
